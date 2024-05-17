@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+}
+.container {
+    display: flex;
+
+}
+.sidebar {
+    width: 20%;
+    border-radius: 10px;
+    padding: 20px;
+}
+.sidebar img {
+    max-width: 100%; /* Максимальная ширина изображения в боковой панели */
+}
+.contact {
+    background-color: red;
+    color: white;
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+}
+.contact::after {
+    content: '';
+    position: absolute;
+    top: -20px; /* Расстояние от верха контейнера */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid red; /* Меняем на border-bottom */
+}
+.contact i {
+    margin-right: 10px; /* Добавляем отступ справа от иконок */
+}
+.welcome-text {
+    text-align: left; /* Выравниваем текст по правому краю */
+    margin-top: 10px; /* Добавляем отступ сверху */
+    color: white; /* Устанавливаем цвет текста */
+    font-size: 14px; /* Устанавливаем размер текста */
+    font-weight:400 ; /* Устанавливаем полужирное начертание текста */
+}
+
