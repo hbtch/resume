@@ -60,10 +60,17 @@ body {
     color: white; 
     font-size: 14px; 
     font-weight: normal ; 
+    line-height: 1.6;
 }
 .welcome-text img {
     position: absolute;
     top: 0; 
     right: 0;
     margin-top: -20px;
+}
+.welcome-text h1 {
+    color: #ff0d00; 
+}
+.welcome-text h2 {
+    color: #ff0d00;
 }
