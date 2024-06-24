@@ -1,63 +1,69 @@
-
 body {
     background-color: black;
     font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 0;
+    display: flex;
 }
 .container {
     display: flex;
-
+    max-width: 100%;
+    height: 100vh;
+    margin: 30px;
 }
 .sidebar {
-    width: 25%;
-    border-radius: 10px;
-    padding: 20px;
-}
-.sidebar img {
-    max-width: 100%; 
-    border-radius: 8px; 
-}
-.contact {
-    background-color: red;
+    width: 20%;
+    height: 100%;
+    padding: 0px;
+    background-color: #ff0d00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: white;
-    position: relative;
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 14px;
+    text-align: center;
 }
-.contact a {
-    color: white; /* Цвет текста ссылок */
-    text-decoration: none; /* Убираем подчеркивание */
+.profile-photo {
+    width: 100%;
+    margin-bottom: 20px;
 }
-
-.contact a:hover {
-    text-decoration: underline; /* Подчеркивание при наведении */
+.contact-info {
+    text-align: left;
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 20px;
+    line-height: 2.5;
 }
-
-.contact::after {
-    content: '';
-    position: absolute;
-    top: -20px; /* Расстояние от верха контейнера */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 20px solid red; 
+.contact-info h2 {
+    margin: 0;
+    font-weight: bold;
 }
-.contact i {
-    margin-right: 10px; /* отступ справа от иконок */
+.contact-info p {
+    margin: 0;
+    font-weight: normal;
+}
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.contact-info i {
+    margin-right: 10px;
 }
 .welcome-text {
     position: relative;
     text-align: left;
     margin-top: 10px; 
+    margin-left: 20px;
     color: white; 
     font-size: 14px; 
-    font-weight:400 ; 
+    font-weight: normal ; 
 }
 .welcome-text img {
-    position: absolute; /* Устанавливаем позицию абсолютную для изображения */
-    top: 0; /* Располагаем изображение сверху */
-    right: 0; /* Располагаем изображение справа */
+    position: absolute;
+    top: 0; 
+    right: 0;
+    margin-top: -20px;
 }
